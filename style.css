@@ -1,0 +1,118 @@
+body {
+    font-family: Georgia, sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('oboi2.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    color: #075319;
+    overflow: hidden; /* Предотвращение прокрутки всей страницы */
+}
+
+.container {
+    background: rgba(227, 237, 222, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-height: 90vh; /* Максимальная высота контейнера */
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#add-button, #clear-button {
+    padding: 13px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#add-button:hover, #clear-button:hover {
+    background-color: #218838;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto; /* Вертикальная прокрутка при переполнении */
+    flex-grow: 1; /* Расширение списка задач для заполнения доступного пространства */
+}
+
+/* Стили для полосы прокрутки */
+#todo-list::-webkit-scrollbar {
+    width: 12px; /* Ширина полосы прокрутки */
+}
+
+#todo-list::-webkit-scrollbar-thumb {
+    background-color: #80c590; /* Цвет ползунка */
+    border-radius: 6px; /* Закругленные углы ползунка */
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.todo-text {
+    flex-grow: 1;
+}
+
+.button-container {
+    display: flex;
+    gap: 14px;
+}
+
+.todo-item button {
+    background-color: #d65361;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.todo-item button:hover {
+    background-color: #c82333;
+}
+
+#add-button {
+    font-size: 18px; 
+}
