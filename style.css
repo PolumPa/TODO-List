@@ -107,6 +107,8 @@ h1 {
     padding: 8px;
     border-radius: 8px;
     cursor: pointer;
+    height: 35px;
+    width: 30px;
 }
 
 .todo-item button:hover {
