@@ -18,7 +18,7 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
-    max-height: 90vh; /* Максимальная высота контейнера */
+    max-height: 90vh; 
     display: flex;
     flex-direction: column;
 }
@@ -61,18 +61,18 @@ h1 {
     list-style: none;
     padding: 0;
     margin: 0;
-    overflow-y: auto; /* Вертикальная прокрутка при переполнении */
-    flex-grow: 1; /* Расширение списка задач для заполнения доступного пространства */
+    overflow-y: auto; 
+    flex-grow: 1; 
 }
 
 /* Стили для полосы прокрутки */
 #todo-list::-webkit-scrollbar {
-    width: 12px; /* Ширина полосы прокрутки */
+    width: 12px; 
 }
 
 #todo-list::-webkit-scrollbar-thumb {
-    background-color: #80c590; /* Цвет ползунка */
-    border-radius: 6px; /* Закругленные углы ползунка */
+    background-color: #80c590; 
+    border-radius: 6px; 
 }
 
 .todo-item {
